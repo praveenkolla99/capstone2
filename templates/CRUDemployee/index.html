@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRUDemployee</title>
+</head>
+<body>
+	<h1>Employee Form</h1>
+	<form action="/CRUDemployee/" method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		ID : <input type="text" name="id" value="{{emp.id}}"><br>
+		NAME : <input type="text" name="name" value="{{emp.name}}"><br>
+		AGE : <input type="text" name="age" value="{{emp.age}}"><br>
+		
+
+		<button type="submit" value="insert" name="btn">Insert</button>
+		<button type="submit" value="select" name="btn">Select</button>
+		<button type="submit" value="update" name="btn">Update</button>
+		<button type="submit" value="delete" name="btn">Delete</button>
+		<button type="submit" value="selectAll" name="btn">Select All</button>
+
+	</form>
+		
+
+</body>
+</html>

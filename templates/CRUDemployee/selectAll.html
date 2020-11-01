@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data</title>
+</head>
+<body>
+	<h1>Employees</h1>
+	<table border="1">
+		<tr>
+			<th>Employe ID</th>
+			<th>Employe Name</th>
+			<th>Employe Age</th>
+			
+		</tr>
+	{% for e in emp %}
+	<tr>
+		<td>{{e.id}}</td>
+		<td>{{e.name}}</td>
+		<td>{{e.age}}</td>
+		
+	</tr>
+	{% endfor %}
+
+	</table>
+
+</body>
+</html>
